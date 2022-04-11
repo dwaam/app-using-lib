@@ -5,7 +5,7 @@ import { MyLibraryService } from '@my-company/app-and-lib/dist/libs/my-library/m
 export class AppService {
   constructor(private myLibraryService: MyLibraryService) {}
 
-  getHello(): string {
+  getHello() {
     return this.myLibraryService.getHelloFromLibrary();
   }
 }
